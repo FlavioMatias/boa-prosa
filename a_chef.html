@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>boa-prosa</title>
         <link rel="icon" href="img/icon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/reservas.css">
+        <link rel="stylesheet" href="css/a_chef.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
@@ -23,40 +23,27 @@
             </nav>
         </header>
         <main>
-            <h1>Faça sua Reserva</h1>
-            <form action="#">
-                <label for="nome">Nome:</label> <br>
-                <input type="text" id="nome" placeholder="Nome"> <br>
-
-                <label for="horario">Horário:</label> <br>
-                <select name="horario" id="horario">
-                    <option value="7h00">07:00</option>
-                    <option value="7h30">07:30</option>
-                </select> <br>
-
-                <label for="unidade">Unidade:</label> <br>
-                <input type="text" id="unidade" list="lista-unidades" placeholder="Selecione uma de nossas unidades"> <br>
-                <datalist id="lista-unidades">
-                    <option>Natal</option>
-                    <!-- NÃO PRECISA DE VALUE PQ JÁ ESTÁ NO ID DA LISTA -->
-                    <option>Recife</option>
-                </datalist>
-
-                <label for="ambiente">Ambiente:</label> <br>
-                <select name="ambiente" id="ambiente">
-                    <option value="salao">Salão</option>
-                    <option value="balcao">Balcão</option>
-                    <option value="mesa_chef">Mesa da chef</option>
-                </select> <br>
-        
-                <label for="pessoas">Pessoas:</label> <br>
-                <input type="number" id="pessoas" placeholder="0"> <br>
-
-                <label for="obs">Observaçõs:</label> <br>
-                <textarea name="obs" id="obs" placeholder="Algo em especial?"></textarea> <br>
-                <div class="finalizar">
-                    <input type="submit" id="envio" value="Finalizar Reserva">
+            <div class="larissa">
+                <figure>
+                    <img src="img/chef.png" alt="Chef">
+                </figure>
+                <section>
+                    <h2>Larissa Alcantara</h2>
+                    <p>Larissa Alcântara, com 22 anos, é a talentosa cozinheira do restaurante Boa-Prosa. Desde jovem, Larissa tem uma paixão pela culinária que a levou a se formar em uma prestigiada escola de culinária. No Boa-Prosa, ela é conhecida por sua criatividade e técnica, transformando ingredientes simples em pratos sofisticados. Sua dedicação e talento fazem dela uma peça-chave no sucesso do restaurante, prometendo uma experiência gastronômica única para os clientes.</p>
+                </section>
+            </div>
+            <section class="bg_02">
+                <h2>Mas todo grande chef tem uma grande equipe ao seu lado</h2>
+            </section>
+            <div class="equipe">
+                <figure>
+                    <img src="img/equipe.png" alt="">
+                </figure>
+                <div>
+                    <h2>A melhor equipe está aqui</h2>
+                    <p>Uma excelente equipe de cozinha é o coração pulsante de qualquer restaurante de sucesso. Composta por profissionais dedicados e talentosos, essa equipe trabalha em perfeita harmonia para garantir que cada prato servido seja uma obra-prima. A comunicação clara, o respeito mútuo e a paixão pela culinária são os pilares que sustentam essa equipe. Juntos, eles transformam ingredientes simples em experiências gastronômicas inesquecíveis, encantando os clientes e elevando o nome do restaurante</p>
                 </div>
+            </div>
         </main>
         <footer>
             <p class="button_reserva"><a href="reservas.html">Reservas online</a></p>

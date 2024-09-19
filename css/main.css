@@ -21,14 +21,30 @@
   }
 
 .sobre {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
+    background-image: url('../img/backsection\ init.png');
+    height: 100%;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Espaço entre os elementos */
+    overflow: hidden;
+
 }
 
 .sobre img {
-    width: 100%;
+    width: 50%;
+    max-width: 40em;
+    padding: 1em 0;
+}
 
+.sobre_content {
+    flex: 1; 
+    margin-left: 10em;
+    top: 27%;
+    padding: 20px;
 }
 .sobre_content h2, .sobre_chef h2
 {
@@ -43,13 +59,6 @@
     padding-top: 6px;
 }
 
-.sobre_content {
-    position: absolute;
-    top: 27%;
-    left: 58%;
-    padding: 20px;
-
-}
 .back_mid {
     background-image: url('../img/backmid.png');
     height: 15em;
@@ -61,21 +70,31 @@
   }
 
 .O_chef {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
+    background-image: url('../img/backsection\ init.png');
+    height: 100%;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
 }
 
 .O_chef img {
-    width: 100%;
-    border: 0;
 
+    height: 25em;
+    width: auto;
+    padding: 1em 0;
+    margin-right: -2em;
 }
 
 .sobre_chef {
-    position: absolute;
+    flex: 1; 
+    margin: 0 1em;
     top: 27%;
-    left: 4%;
     padding: 20px;
 }
 .back_end
@@ -99,8 +118,8 @@
 
 footer {
     display: flex;
-    flex-direction: column; /* Organiza os elementos verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    flex-direction: column; 
+    align-items: center;
     background-color: rgb(43, 43, 43);
     padding: 1em;
     color: white;
@@ -111,7 +130,7 @@ footer p
 }
 
 .button_reserva {
-    margin-bottom: 1em; /* Espaço entre o botão e o conteúdo abaixo */
+    margin-bottom: 1em;
 }
 
 .button_reserva a {
@@ -138,16 +157,16 @@ footer p
 .footer-content {
     margin-bottom: 1em;
     display: flex;
-    justify-content: space-between; /* Espaça os itens uniformemente */
-    width: 100%; /* Faz com que a largura do contêiner ocupe 100% do espaço disponível */
-    max-width: 1200px; /* Limita a largura máxima do rodapé */
-    margin-top: 1em; /* Espaço acima do conteúdo do rodapé */
+    justify-content: space-between;
+    width: 100%; 
+    max-width: 1200px; 
+    margin-top: 1em; 
 }
 
 .contatos_footer{
     color: white;
-    flex: 1; /* Faz com que esses itens ocupem o mesmo espaço disponível */
-    text-align: left; /* Alinha o texto à esquerda */
+    flex: 1; 
+    text-align: left; 
     margin-left: 2em;
 }
 .endereços_footer
@@ -158,14 +177,14 @@ footer p
 
 .SIGA_NOS {
     margin-left: -37em;
-    text-align: center; /* Centraliza o conteúdo dentro deste bloco */
-    flex: 1; /* Faz com que este item ocupe o mesmo espaço disponível */
+    text-align: center; 
+    flex: 1;
 }
 
 .SIGA_NOS ul {
     padding: 1em;
-    display: flex; /* Organiza os itens da lista horizontalmente */
-    justify-content: center; /* Centraliza os ícones */
+    display: flex; 
+    justify-content: center; 
 }
 .SIGA_NOS h2
 {
@@ -176,7 +195,7 @@ footer p
 .SIGA_NOS li {
     
     margin: 0 10px;
-    /* Espaço entre os ícones */
+
 }
 .SIGA_NOS li:hover
 {
@@ -347,13 +366,13 @@ footer p
     
     .contatos_footer {
         color: white;
-        text-align: center;  /* Centraliza o texto em telas pequenas */
-        margin-bottom: 1em;  /* Adiciona espaçamento entre as seções */
+        text-align: center;  
+        margin-bottom: 1em;  
     }
     
     .endereços_footer {
         color: white;
-        text-align: center;  /* Centraliza o texto em telas pequenas */
+        text-align: center; 
         margin-bottom: 1em;
     }
     

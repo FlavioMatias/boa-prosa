@@ -163,72 +163,80 @@ header.ativo nav a::after {
     transform-origin: bottom right;
     transition: transform 0.5s ease;
 }
-
 header.ativo nav a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-main{
-    background-image: url(../img/bg_main.png);
-    background-size: cover;
+
+html, body{
+    height: 100%;
 }
-main h1{
-    text-align: center;
-    padding: 2em;
-    color: white;
-    font-family: Bitter;
-    font-style: italic;
-}
-form {
-    background-image: url(../img/bg_form.png);
-    background-repeat: no-repeat;
-    margin-left: 31%;
-    height: 100vh;
-    padding-top: 1em;
-    padding-bottom: 5em;
+body{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
-form select, #nome, #horario, #unidade, #pessoas{
-    margin-left: 1em;
-    margin-bottom: -1em;
-    width: calc(40em - 2em);
-    padding: 1em;
-    box-sizing: border-box;
-    border-radius: 1em;
+main{
+    flex: 1;
+    height: auto;
 }
-form textarea {
-    margin-left: 1em;
-    margin-bottom: -1em;
-    width: calc(40em - 2em);
-    padding: 1em;
-    box-sizing: border-box;
-    max-height: 4em;
-    min-height: 4em;
-    max-width: calc(40em - 2em);
-    min-width: calc(40em - 2em);
-    border-radius: 1em;
+.larissa{
+    background-image: url(../img/bg1.png);
+    height: 100vh;
+    background-repeat: no-repeat;
 }
-form label {
-    font-weight: bolder;
-    font-size: large;
-    margin-left: 1em;
-    font-size: larger;
+.larissa > figure, .larissa img {
+    text-align: center;
+    padding-top: 3em;
 }
-.finalizar #envio{
-    font-family: Bitter;
-    font-style: italic;
-    font-size: medium;
-    font-weight: inherit;
-    background: rgb(158, 0, 0);
+.larissa h2{
+    font-family: Birthstone;
+}
+.larissa h2, .larissa p {
+    text-align: center;
+    padding-top: 1em;
+    margin: 0 25em;
+}
+.bg_02{
+    background-image: url(../img/pedra.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 10em;
+}
+.bg_02 h2{
+    text-align: center;
+    padding-top: 1.3em;
     color: white;
-    border: 1px solid black;
-    border-radius: 1em;
-    padding: 1em 1em;
-    cursor: pointer;
-    margin-left: 230%;
-    margin-top: 0.5em;
+    margin: 0 15em;  
+    font-family: Arial Serif;
+    font-size: 2em;
+}
+.equipe {
+    background-image: url(../img/textura2.png);
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    padding: 1em; 
+}
+
+.equipe figure {
+    margin-right: 6em; 
+}
+
+.equipe h2 {
+    text-align: center; 
+    font-size: 2em;
+    font-family: Arial Serif;
+    margin-bottom: 1em;
+    background: linear-gradient(to right, black, darkgray); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+.equipe p {
+    flex: 1; 
+    text-align: left; 
 }
 
 footer {
@@ -258,7 +266,7 @@ footer p
     font-weight: 500;
     color: white;
     text-align: center;
-    line-height: 3em;
+    line-height: 3em; 
     transition: 0.7s;
 }
 
@@ -274,7 +282,7 @@ footer p
     display: flex;
     justify-content: space-between; 
     width: 100%; 
-    max-width: 1200px;
+    max-width: 1200px; 
     margin-top: 1em; 
 }
 
@@ -310,6 +318,7 @@ footer p
 .SIGA_NOS li {
     
     margin: 0 10px;
+    
 }
 .SIGA_NOS li:hover
 {
