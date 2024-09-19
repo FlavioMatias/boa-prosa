@@ -1,0 +1,403 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.init {
+    background-image: url('../img/initimg (1).png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+  }
+
+.sobre {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.sobre img {
+    width: 100%;
+
+}
+.sobre_content h2, .sobre_chef h2
+{
+    width: 11em;
+    font-weight: 400;
+    border-bottom: 1.5px solid black; 
+    padding-bottom: 3px;
+}
+.sobre_content p, .sobre_chef p
+{
+    font-size: 17px;
+    padding-top: 6px;
+}
+
+.sobre_content {
+    position: absolute;
+    top: 27%;
+    left: 58%;
+    padding: 20px;
+
+}
+.back_mid {
+    background-image: url('../img/backmid.png');
+    height: 15em;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+
+  }
+
+.O_chef {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.O_chef img {
+    width: 100%;
+    border: 0;
+
+}
+
+.sobre_chef {
+    position: absolute;
+    top: 27%;
+    left: 4%;
+    padding: 20px;
+}
+.back_end
+{
+    background-image: url('../img/boa-proza_END.png');
+    height: 15em;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+.back_end p {
+    color: #FFF4D0;
+    font-size: 5em;
+    font-weight: 500;
+    padding: 1em 0 1em 0; 
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 90%; 
+}
+
+footer {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    background-color: rgb(43, 43, 43);
+    padding: 1em;
+    color: white;
+}
+footer p
+{
+    color: white; 
+}
+
+.button_reserva {
+    margin-bottom: 1em; /* Espaço entre o botão e o conteúdo abaixo */
+}
+
+.button_reserva a {
+    display: block;
+    width: 10em;
+    height: 3em; 
+    border: 2px solid #E3A700;
+    padding: 0.5em;
+    border-radius: 7px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    line-height: 3em; 
+    transition: 0.7s;
+}
+
+.button_reserva a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #E3A700;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+    
+}
+
+.footer-content {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between; /* Espaça os itens uniformemente */
+    width: 100%; /* Faz com que a largura do contêiner ocupe 100% do espaço disponível */
+    max-width: 1200px; /* Limita a largura máxima do rodapé */
+    margin-top: 1em; /* Espaço acima do conteúdo do rodapé */
+}
+
+.contatos_footer{
+    color: white;
+    flex: 1; /* Faz com que esses itens ocupem o mesmo espaço disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-left: 2em;
+}
+.endereços_footer
+{
+    color: white;
+    margin-left: -37em;
+}
+
+.SIGA_NOS {
+    margin-left: -37em;
+    text-align: center; /* Centraliza o conteúdo dentro deste bloco */
+    flex: 1; /* Faz com que este item ocupe o mesmo espaço disponível */
+}
+
+.SIGA_NOS ul {
+    padding: 1em;
+    display: flex; /* Organiza os itens da lista horizontalmente */
+    justify-content: center; /* Centraliza os ícones */
+}
+.SIGA_NOS h2
+{
+    font-weight: 400;
+    color: white;
+}
+
+.SIGA_NOS li {
+    
+    margin: 0 10px;
+    /* Espaço entre os ícones */
+}
+.SIGA_NOS li:hover
+{
+    filter: invert(23%) sepia(100%) saturate(400%) hue-rotate(-50deg) brightness(105%) contrast(100%);
+}
+.SIGA_NOS img {
+    width: 24px; 
+    height: auto;
+}
+.mobile_main
+{
+    display: none;
+}
+@media (max-width: 480px)
+{
+    .desktop_main
+    {
+        display: none;
+    }
+    footer
+    {
+        width: 93.5vw;
+    }
+    .mobile_main
+    {
+    display: block;
+    }
+    body
+    {
+        background-color:white;
+    }
+    .mobileback1
+    {
+        background-image: url(../img/mobile_init.png);
+        height: 100vh;
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+    }
+    .mobilesobre
+    {
+        background-image: url(../img/mobilebacksection.png);
+        background-size: contain;
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat; 
+
+        max-height: 100vh;
+        width: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .mobilesobre h2
+    {
+        font-weight: 500;
+        border-bottom: 2px solid black;
+        width: 60%;
+        margin: 0.6em;
+        margin-left: 13%;
+ 
+    }
+    .mobilesobre p
+    {
+        font-weight: 400;
+        margin: 0 auto;
+        width: 75%;
+    }
+    .mobilesobre img
+    {
+
+        margin: 2em auto;
+        width: 20em;
+        height: auto;
+        max-width: 20em;
+        max-height: 20em;
+    }
+    .mobileback2
+    {
+        background-image: url(../img/backmidmob.png);
+        height: 10em;
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+    }
+    .chefmobile
+    {
+        background-image: url(../img/mobilebacksection.png);
+        background-size: contain;        
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        max-height: 100vh;
+        width: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .chefmobile h2
+    {
+        font-weight: 500;
+        border-bottom: 2px solid black;
+        width: 60%;
+        margin: 0.6em;
+        margin-left: 13%;
+ 
+    }
+    .chefmobile p
+    {
+        font-weight: 400;
+        margin: 0 auto;
+        width: 75%;
+    }
+    .chefmobile img
+    {
+
+        margin: 2em auto;
+        width: 20em;
+        height: auto;
+        border-radius: 5px;
+        max-width: 20em;
+        max-height: 20em;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(43, 43, 43);
+        padding: 1em;
+        color: white;
+    }
+    
+    footer p {
+        color: white;
+    }
+    
+    .button_reserva {
+        margin-bottom: 1em;
+    }
+    
+    .button_reserva a {
+        display: block;
+        width: 10em;
+        height: 3em;
+        border: 2px solid #E3A700;
+        padding: 0.5em;
+        border-radius: 7px;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        line-height: 3em;
+        transition: 0.7s;
+    }
+    
+    .button_reserva a:hover {
+        color: rgb(0, 0, 0);
+        background-color: #E3A700;
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contatos_footer {
+        color: white;
+        text-align: center;  /* Centraliza o texto em telas pequenas */
+        margin-bottom: 1em;  /* Adiciona espaçamento entre as seções */
+    }
+    
+    .endereços_footer {
+        color: white;
+        text-align: center;  /* Centraliza o texto em telas pequenas */
+        margin-bottom: 1em;
+    }
+    
+    .SIGA_NOS {
+        text-align: center;
+    }
+    
+    .SIGA_NOS ul {
+        padding: 0;
+        margin: 0;
+        display: flex; 
+        justify-content: center; 
+        gap: 10px; 
+        flex-wrap: nowrap;
+    }
+    
+    .SIGA_NOS h2 {
+        font-weight: 400;
+        color: white;
+    }
+    
+    .SIGA_NOS li {
+        margin: 0 10px;
+    }
+    
+    .SIGA_NOS li:hover {
+        filter: invert(23%) sepia(100%) saturate(400%) hue-rotate(-50deg) brightness(105%) contrast(100%);
+    }
+    
+    .SIGA_NOS img {
+        width: 24px;
+        height: auto;
+    }
+
+    .contatos_footer,
+    .endereços_footer,
+    .SIGA_NOS {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .SIGA_NOS ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

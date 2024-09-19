@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>boa-proza</title>
+        <link rel="stylesheet" href="css/reservas.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html"><img src="img/logo boaprosa (1).png" alt=""></a></h1>
+            <nav>
+                <ol>
+                    <li><a href="cardapio.html">Cardapio</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="#">A chefe</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ol>
+            </nav>
+        </header>
+        <main>
+            <h1>Faça sua Reserva</h1>
+            <form action="#">
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome" placeholder="Nome"> <br>
+
+                <label for="horario">Horário:</label> <br>
+                <select name="horario" id="horario">
+                    <option value="7h00">07:00</option>
+                    <option value="7h30">07:30</option>
+                </select> <br>
+
+                <label for="unidade">Unidade:</label> <br>
+                <input type="text" id="unidade" list="lista-unidades" placeholder="Selecione uma de nossas unidades"> <br>
+                <datalist id="lista-unidades">
+                    <option>Natal</option>
+                    <!-- NÃO PRECISA DE VALUE PQ JÁ ESTÁ NO ID DA LISTA -->
+                    <option>Recife</option>
+                </datalist>
+
+                <label for="ambiente">Ambiente:</label> <br>
+                <select name="ambiente" id="ambiente">
+                    <option value="salao">Salão</option>
+                    <option value="balcao">Balcão</option>
+                    <option value="mesa_chef">Mesa da chef</option>
+                </select> <br>
+        
+                <label for="pessoas">Pessoas:</label> <br>
+                <input type="number" id="pessoas" placeholder="0"> <br>
+
+                <label for="obs">Observaçõs:</label> <br>
+                <textarea name="obs" id="obs" placeholder="Algo em especial?"></textarea> <br>
+                <div class="finalizar">
+                    <input type="submit" id="envio" value="Finalizar Reserva">
+                </div>
+        </main>
+        <footer>
+            <p class="button_reserva"><a href="reservas.html">Reservas online</a></p>
+        
+            <div class="footer-content">
+                <p class="contatos_footer">
+                    Contatos: <br>
+                    WhatsApp: (84) 99123-4567 <br>
+                    Instagram: @boaproza_restaurante <br>
+                </p>
+        
+                <div class="SIGA_NOS">
+                    <h2>SIGA-NOS</h2>
+                    <ul>
+                        <li><a href=""><img src="img/insta icon.png" alt="Instagram"></a></li>
+                        <li><a href=""><img src="img/twiter icon.png" alt="Twitter"></a></li>
+                        <li><a href=""><img src="img/face icon.png" alt="Facebook"></a></li>
+                    </ul>
+                </div>
+        
+                <p class="endereço_footer">
+                    Endereço: <br>
+                    Av. Sen. Salgado Filho, 1559 -<br>
+                    Tirol, Natal - RN, 59015-000<br>
+                </p>
+            </div>
+        </footer>
+        
+        
+
+        <script src="script/header.js" defer></script>
+    </body>
+
+</html>
