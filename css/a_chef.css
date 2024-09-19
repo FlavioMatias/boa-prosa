@@ -194,7 +194,7 @@ main{
 .larissa h2, .larissa p {
     text-align: center;
     padding-top: 1em;
-    margin: 0 25em;
+    margin: 0 15em;
 }
 .bg_02{
     background-image: url(../img/pedra.png);
@@ -208,35 +208,35 @@ main{
     text-align: center;
     padding-top: 1.3em;
     color: white;
-    margin: 0 15em;  
+    margin: 0 14em;  
     font-family: Arial Serif;
     font-size: 2em;
 }
 .equipe {
     background-image: url(../img/textura2.png);
     display: flex;
-    flex-direction: row; 
-    align-items: center; 
-    padding: 1em; 
+    flex-direction: row; /* Alinha elementos na horizontal */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 1em; /* Adiciona um pouco de espaçamento */
 }
 
 .equipe figure {
-    margin-right: 6em; 
+    margin-right: 6em; /* Espaço entre a imagem e o texto */
 }
 
 .equipe h2 {
-    text-align: center; 
+    text-align: center; /* Alinha o texto à esquerda */
     font-size: 2em;
     font-family: Arial Serif;
     margin-bottom: 1em;
-    background: linear-gradient(to right, black, darkgray); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    background: linear-gradient(to right, black, darkgray); /* Gradiente de preto para cinza */
+    -webkit-background-clip: text; /* Clipa o fundo ao texto */
+    -webkit-text-fill-color: transparent; /* Faz o preenchimento do texto transparente */
 }
 
 .equipe p {
-    flex: 1; 
-    text-align: left; 
+    flex: 1; /* Permite que o parágrafo ocupe o espaço restante */
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
 footer {
