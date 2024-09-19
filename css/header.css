@@ -138,7 +138,7 @@ header.ativo nav ol li a {
 
 header.ativo nav ol li:not(:last-child)::after {
     content: "|";
-    color: rgb(249, 0, 0);
+    color: rgb(255, 255, 255);
     margin-left: 10px;
 }
 
